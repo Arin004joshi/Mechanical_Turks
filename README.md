@@ -27,5 +27,18 @@ It allows users to:
 ---
 
 ## 📂 Project Structure
+project-root/
+├── src/
+│ ├── controllers/
+│ │ ├── taskController.js # createTask, payment verification
+│ │ └── labellerController.js # getPayout
+│ ├── middleware/
+│ │ └── auth.js # verifies JWT & sets req.userId
+│ ├── prisma/
+│ │ └── schema.prisma # Prisma schema
+│ └── index.js # Express app entry
+├── package.json
+└── README.md
+
 
 
