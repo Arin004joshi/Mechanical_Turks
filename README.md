@@ -8,9 +8,9 @@ Built with **React**, **Solana Wallet Adapter**, **Node/Express**, and **Prisma*
 ## 🚀 Features
 
 - **User Authentication** with JWT tokens  
-- **Task Creation** with image upload  
+- **Task Creation** with image upload into Cloudinary 
 - **Payment Integration** using Solana blockchain (Devnet/Testnet)  
-- **Wallet Support** for Phantom and Solflare  
+- **Wallet Support** for Phantom and Backpack 
 - **Transaction Verification** in backend  
 - **Task Dashboard** where users can see all their created tasks and statuses  
 - Built with **Prisma ORM** and **PostgreSQL/MySQL** backend  
@@ -23,10 +23,11 @@ Built with **React**, **Solana Wallet Adapter**, **Node/Express**, and **Prisma*
 | Layer | Technology |
 |-------|-------------|
 | **Frontend** | React, React Router, Tailwind CSS |
-| **Wallets** | `@solana/wallet-adapter-react`, Phantom & Solflare |
+| **Wallets** | `@solana/wallet-adapter-react`, Phantom & Backpack |
 | **Backend** | Node.js, Express.js |
 | **Database** | PostgreSQL / MySQL + Prisma ORM |
 | **Validation** | Zod |
 | **Blockchain** | Solana Devnet/Testnet via `@solana/web3.js` |
 
 ---
+
