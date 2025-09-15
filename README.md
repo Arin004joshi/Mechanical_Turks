@@ -1,28 +1,52 @@
 ﻿# Mechanical_Turks
 
-This project is a backend service built with **Node.js, Express, Prisma, and Solana Web3.js**.  
-It allows users to:
-- Create tasks after making verified Solana payments.
-- Manage payouts for labellers securely.
-- Track balances (pending & locked amounts).
+A full-stack web application where users can **create paid tasks**, upload images, and make **Solana payments** directly via Phantom or Solflare wallets.  
+Built with **React**, **Solana Wallet Adapter**, **Node/Express**, and **Prisma**.
 
 ---
 
 ## 🚀 Features
-- **User Authentication** (JWT with `req.userId` middleware).
-- **Task Creation** with Solana payment verification.
-- **Labeller Payout** management with pending/locked amounts.
-- **Prisma ORM** with PostgreSQL/MySQL/SQLite support.
-- **Secure Transactions** using Prisma’s `$transaction`.
+
+- **User Authentication** with JWT tokens  
+- **Task Creation** with image upload  
+- **Payment Integration** using Solana blockchain (Devnet/Testnet)  
+- **Wallet Support** for Phantom and Solflare  
+- **Transaction Verification** in backend  
+- **Task Dashboard** where users can see all their created tasks and statuses  
+- Built with **Prisma ORM** and **PostgreSQL/MySQL** backend  
+- Fully typed with Zod validation on API inputs  
 
 ---
 
-## 🛠️ Tech Stack
-- **Node.js / Express** — backend framework.
-- **Prisma ORM** — database layer.
-- **Solana Web3.js** — Solana blockchain integration.
-- **JWT Authentication** — secured routes.
-- **PostgreSQL (or your DB)** — persistent storage.
+## ⚙️ Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | React, React Router, Tailwind CSS |
+| **Wallets** | `@solana/wallet-adapter-react`, Phantom & Solflare |
+| **Backend** | Node.js, Express.js |
+| **Database** | PostgreSQL / MySQL + Prisma ORM |
+| **Validation** | Zod |
+| **Blockchain** | Solana Devnet/Testnet via `@solana/web3.js` |
 
 ---
+
+## 🗂️ Project Structure
+/client
+├─ src/
+│ ├─ components/
+│ │ ├─ SubmitTask.jsx # Create tasks & send Solana payments
+│ │ ├─ MyTask.jsx # Task dashboard for logged-in users
+│ │ └─ App.jsx
+│ └─ utils/
+│ └─ index.js # Backend URL + helper constants
+/server
+├─ prisma/
+│ └─ schema.prisma # Database schema
+├─ controllers/
+│ └─ taskController.js # Create & verify tasks
+├─ routes/
+│ └─ userRoutes.js
+└─ app.js / server.js
+
 
