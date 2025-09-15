@@ -30,23 +30,3 @@ Built with **React**, **Solana Wallet Adapter**, **Node/Express**, and **Prisma*
 | **Blockchain** | Solana Devnet/Testnet via `@solana/web3.js` |
 
 ---
-
-## 🗂️ Project Structure
-/client
-├─ src/
-│ ├─ components/
-│ │ ├─ SubmitTask.jsx # Create tasks & send Solana payments
-│ │ ├─ MyTask.jsx # Task dashboard for logged-in users
-│ │ └─ App.jsx
-│ └─ utils/
-│ └─ index.js # Backend URL + helper constants
-/server
-├─ prisma/
-│ └─ schema.prisma # Database schema
-├─ controllers/
-│ └─ taskController.js # Create & verify tasks
-├─ routes/
-│ └─ userRoutes.js
-└─ app.js / server.js
-
-
